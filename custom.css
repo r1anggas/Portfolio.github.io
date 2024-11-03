@@ -1,0 +1,246 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    animation: fadeInDown 1s ease-out;
+}
+
+.tagline {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Navbar */
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Jarak antar link */
+    flex-wrap: nowrap; /* Memastikan navbar tetap sejajar horizontal */
+}
+
+/* Navbar Hover Animation */
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px 15px;
+    transition: color 0.3s, transform 0.3s; /* Menambahkan transisi untuk animasi */
+    white-space: nowrap;
+}
+
+header nav a:hover {
+    color: #ddd;
+    transform: scale(1.1); /* Membesarkan sedikit saat di-hover */
+}
+
+/* Click Animation */
+header nav a {
+    position: relative;
+    overflow: hidden;
+}
+
+header nav a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: left 0.4s ease;
+}
+
+header nav a.clicked::after {
+    left: 100%; /* Animasi geser ke kanan saat diklik */
+}
+
+
+/* Section Styling */
+.section {
+    padding: 60px 0;
+    background-color: #fff;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Form */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+form button {
+    display: block;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border: none;
+    background: #333;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background: #555;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .tagline {
+        font-size: 1em;
+    }
+
+    header nav {
+        gap: 10px; /* Kurangi jarak antar link */
+    }
+
+    header nav a {
+        font-size: 0.9em;
+        padding: 8px 12px; /* Kurangi padding agar link lebih kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .tagline {
+        font-size: 0.9em;
+    }
+
+    header nav {
+        gap: 5px;
+    }
+
+    header nav a {
+        font-size: 0.8em;
+        padding: 6px 10px;
+    }
+}
+/* About Me Section Styling */
+.about-me-content {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    align-items: flex-start; /* Menyelaraskan konten secara vertikal */
+    gap: 20px; /* Jarak antara foto dan teks */
+    margin: auto;
+}
+
+.about-me-photo {
+    width: 150px; /* Atur lebar foto sesuai kebutuhan */
+    height: auto; /* Mempertahankan rasio aspek */
+    border-radius: 10px; /* Memberikan sudut melengkung */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek 3D */
+    margin: auto;
+}
+
+.about-me-text {
+    flex: 1; /* Membiarkan teks mengisi sisa ruang */
+}
+/* ----------------- */
+/* About Me Section Styling */
+.about-me-content {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    align-items: flex-start; /* Menyelaraskan konten secara vertikal */
+    gap: 20px; /* Jarak antara foto dan teks */
+}
+
+/* Tambahkan padding dan margin untuk section About Me */
+.section {
+    padding: 60px 20px; /* Menambahkan padding atas dan bawah, dan sedikit padding samping */
+    margin: 20px 0; /* Menambahkan margin atas dan bawah untuk jarak antar section */
+    background-color: #fff; /* Latar belakang putih untuk section */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek 3D */
+    border-radius: 10px; /* Sudut melengkung untuk section */
+}
+
+.about-me-photo {
+    width: 150px; /* Atur lebar foto sesuai kebutuhan */
+    height: auto; /* Mempertahankan rasio aspek */
+    border-radius: 10px; /* Memberikan sudut melengkung */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek 3D */
+}
+
+.about-me-text {
+    flex: 1; /* Membiarkan teks mengisi sisa ruang */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .about-me-content {
+        flex-direction: column; /* Mengubah tata letak menjadi kolom pada layar kecil */
+        align-items: center; /* Menyelaraskan konten ke tengah */
+    }
+
+    .about-me-photo {
+        margin-bottom: 20px; /* Menambahkan margin bawah untuk pemisahan di layar kecil */
+    }
+}
