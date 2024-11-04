@@ -244,3 +244,24 @@ footer {
         margin-bottom: 20px; /* Menambahkan margin bawah untuk pemisahan di layar kecil */
     }
 }
+/* contact */
+.no_hp_email {
+    background-color: #f4f4f4;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* Tampilan untuk layar lebih kecil */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
