@@ -245,7 +245,7 @@ footer {
     }
 }
 /* contact */
-.no_hp_email {
+.contact-info {
     background-color: #f4f4f4;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -257,6 +257,43 @@ footer {
     justify-content: center;
     text-decoration: none;
 }
+.contact-info {
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+}
+
+.contact-item {
+    position: relative;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    display: none; /* Tersembunyi secara default */
+    width: 24px; /* Sesuaikan ukuran ikon */
+    height: 24px; /* Sesuaikan ukuran ikon */
+    margin-left: 10px; /* Jarak antara teks dan ikon */
+    transition: opacity 0.3s ease;
+}
+
+.contact-item:hover .icon {
+    display: inline; /* Tampilkan ikon saat hover */
+    opacity: 1; /* Menampilkan ikon dengan transisi */
+}
+
+.whatsapp-icon {
+    content: url('whatsapp-ikon.png'); /* Ganti dengan URL gambar ikon WhatsApp Anda */
+}
+
+.email-icon {
+    content: url('email-ikon.png'); /* Ganti dengan URL gambar ikon email Anda */
+}
+
+.linkedin-icon {
+    content: url('linkedin-ikon.png'); /* Ganti dengan URL gambar ikon LinkedIn Anda */
+}
+
 
 /* Tampilan untuk layar lebih kecil */
 @media (max-width: 768px) {
