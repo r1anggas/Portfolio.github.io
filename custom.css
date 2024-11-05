@@ -94,6 +94,8 @@ header nav a:hover {
 header nav a {
     position: relative;
     overflow: hidden;
+    background-color: rebeccapurple;
+
 }
 
 header nav a::after {
@@ -111,38 +113,22 @@ header nav a.clicked::after {
     left: 100%; /* Animasi geser ke kanan saat diklik */
 }
 
-/* Gaya umum untuk navbar */
+/* Ukuran font default untuk navbar */
 .navbar a {
-    text-decoration: none;
-    color: #ffffff; /* Warna font */
-    transition: font-size 0.3s ease; /* Animasi halus untuk perubahan ukuran */
+    font-size: 16px; /* Ukuran font default */
 }
 
-/* Font-size untuk layar besar */
-@media (min-width: 1025px) {
-    .navbar a {
-        font-size: 18px; /* Ukuran font untuk desktop */
-    }
-}
-
-/* Font-size untuk layar menengah (tablet) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .navbar a {
-        font-size: 16px; /* Ukuran font untuk tablet */
-    }
-}
-
-/* Font-size untuk layar kecil (ponsel) */
+/* Responsif untuk layar kecil */
 @media (max-width: 768px) {
     .navbar a {
-        font-size: 14px; /* Ukuran font untuk ponsel */
+        font-size: 14px; /* Ukuran font lebih kecil untuk layar kecil */
     }
 }
 
-/* Font-size lebih kecil untuk ponsel layar sangat kecil */
+/* Responsif untuk layar sangat kecil */
 @media (max-width: 480px) {
     .navbar a {
-        font-size: 12px; /* Ukuran font untuk ponsel layar kecil */
+        font-size: 12px; /* Ukuran font lebih kecil untuk layar sangat kecil */
     }
 }
 
