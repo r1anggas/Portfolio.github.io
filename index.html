@@ -92,11 +92,18 @@
                     Indonesia</li> 
                 <li>Tahun : 2024</li>
             </ul>
-            <div class="foto-sertifikat">
-                <img src="SERTIFIKASI KEAHLIAN LSP-EI-1.png" alt="sertifikasi" class="sertifikasi-1">
-                <img src="SERTIFIKASI KEAHLIAN LSP-EI-2.png" alt="sertifikasi" class="sertifikasi-2">
+            <div id="sertifikat" class="foto-sertifikat"">
+                <span class="close">&times;</span>
+                <img src="SERTIFIKASI KEAHLIAN LSP-EI-1.png" alt="sertifikasi" class="sertifikasi-1" onclick="openModal(this.src)">
+                <img src="SERTIFIKASI KEAHLIAN LSP-EI-2.png" alt="sertifikasi" class="sertifikasi-2" onclick="openModal(this.src)">
             </div>
             
+            <!-- -------------------------------- -->
+            <div id="certificateModal" class="modal" onclick="closeModal()">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="fullCertificate">
+            </div>
+
         </div>
     </section>
 
