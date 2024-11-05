@@ -285,7 +285,7 @@ footer {
     text-decoration: none;
     font-family: Arial, sans-serif;
     margin: 20px 0;
-
+    gap: 20px; /* Memberikan jarak antar item */
 }
 
 .contact-item {
@@ -315,8 +315,8 @@ footer {
 }
 .icon {
     display: none; /* Tersembunyi secara default */
-    width: 24px; /* Sesuaikan ukuran ikon */
-    height: 24px; /* Sesuaikan ukuran ikon */
+    width: 5vh; /* Sesuaikan ukuran ikon */
+    height: 5vh; /* Sesuaikan ukuran ikon */
     margin-left: 10px; /* Jarak antara teks dan ikon */
     transition: opacity 0.5s ease;
 }
