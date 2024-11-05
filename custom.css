@@ -94,6 +94,7 @@ header nav a:hover {
 header nav a {
     position: relative;
     overflow: hidden;
+
 }
 
 header nav a::after {
